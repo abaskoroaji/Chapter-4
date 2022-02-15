@@ -77,16 +77,24 @@ handPLayer.forEach((element) => {
             }
         
             let text;
-            switch(random) {
-            case 0:
-                text = "batu";
-                break;
-            case 1:
-                text = "kertas";
-                break;
-            case 2:
-                text = "gunting";
-            }
+            // switch(random) {
+            // case 0:
+            //     text = "batu";
+            //     break;
+            // case 1:
+            //     text = "kertas";
+            //     break;
+            // case 2:
+            //     text = "gunting";
+            // }
+
+            var textArr = [
+                "batu",
+                "kertas",
+                "gunting"
+            ]
+            text = textArr[random]
+
             console.log('Computer memilih:', text);
         
             const gameResult = () => {
